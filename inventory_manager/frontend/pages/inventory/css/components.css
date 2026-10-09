@@ -1,0 +1,80 @@
+@import url(base.css);
+
+
+/*Style for the card cange buttons*/
+.nav-ul{
+    list-style: none;
+    display: flex;
+}
+.nav-ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 5%;
+}
+
+
+.container > div {
+    background-color: --primary;
+    margin: 1%;
+}
+
+.toolbar {
+
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.toolbar_btn {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+.toolbar_btn:hover {
+    background-color: var(--buttons);
+    border-radius: 6px;
+}
+
+.inventory_items {
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.inventory {
+    text-align: left;
+}
+
+
+
+.inventory thead tr th {
+    margin: 50px;
+}
+.inventory tbody tr:hover {
+    background-color: rgb(39, 40, 40);
+    color: white;
+}
+
+/*dialog for item infos style*/
+.item_dialog {
+    border: 0px;
+}
+.dialog_btn {
+    padding: 1%;
+    margin: 1%;
+    background-color: var(--buttons);
+    border: 2px solid transparent;
+    transition: .2s ease;
+}
+.dialog_btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--buttons);
+}
+
+.delete_btn {
+    display: none;
+    background-color: var(--buttons);
+    border: 2px solid transparent;
+    transition: .2s ease;
+}
+.inventory tbody tr:hover .delete_btn {
+    display: block;
+}

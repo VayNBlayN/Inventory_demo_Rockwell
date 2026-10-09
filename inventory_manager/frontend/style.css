@@ -1,0 +1,27 @@
+body {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(images/rohit-tandon-9wg5jCEPBsw-unsplash.jpg);
+    background-size: cover;
+    background-position-y: -200px;
+}
+
+.nav-ul {
+    display: flex;
+    list-style: none;
+    backdrop-filter: blur(20px);
+    background-color: rgba(34, 34, 34, 0.668);
+    margin: 0%;
+    padding: 1%;
+}
+
+.nav-ul li a {
+    color: white;
+    text-decoration: none;
+    padding: .6rem;
+    border-bottom: 1px solid transparent;
+    transition: .3s ease-in;
+}
+.nav-ul li a:hover {
+    border-bottom: 1px solid white;
+}

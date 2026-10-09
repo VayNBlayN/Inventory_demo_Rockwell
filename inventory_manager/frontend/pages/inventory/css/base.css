@@ -1,0 +1,20 @@
+/*
+color palette
+#353535 (borders f.e.), #3c6e71 (buttons), #ffffff (primary), #d9d9d9 (shadow of primary), #284b63
+*/
+/*nice color: #291919*/
+:root {
+    --primary:  #ffffff;
+    --secondary: #d9d9d9;
+    --buttons: #6fcfd4;
+    --font-size-1: 16px;
+    --text-color: black;
+    --font: Arial, Helvetica, sans-serif;
+    --font-weight: 500;
+}
+
+body {
+    background-color: var(--primary);
+    font-size: var(--font-size-1);
+    font-family: var(--font);
+}
