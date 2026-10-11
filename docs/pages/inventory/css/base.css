@@ -15,7 +15,7 @@ color palette
 }
 
 body {
-    background: url(/inventory_manager/frontend/images/kerensa-pickett-GjpUV4k76F8-unsplash.jpg);
+    background: url(/docs/images/kerensa-pickett-GjpUV4k76F8-unsplash.jpg);
     background-size: cover;
     font-size: var(--font-size-1);
     font-family: var(--font);
