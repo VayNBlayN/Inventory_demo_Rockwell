@@ -7,6 +7,7 @@ color palette
     --primary:  #ffffff;
     --secondary: #d9d9d9;
     --buttons: #6fcfd4;
+    --buttons-darker1: #2d5254;
     --font-size-1: 16px;
     --text-color: black;
     --font: Arial, Helvetica, sans-serif;
@@ -14,7 +15,10 @@ color palette
 }
 
 body {
-    background-color: var(--primary);
+    background: url(/inventory_manager/frontend/images/kerensa-pickett-GjpUV4k76F8-unsplash.jpg);
+    background-size: cover;
     font-size: var(--font-size-1);
     font-family: var(--font);
+    margin: 0%;
+    scroll-behavior: smooth;
 }

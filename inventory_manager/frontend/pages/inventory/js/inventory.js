@@ -7,7 +7,7 @@ export function readForm() {
     return {
         id: crypto.randomUUID(),
         name: item_name.value,
-        category: item_category.value,
+        category: item_category.value.trim(),
         quantity: item_quantity.value,
         price: item_price.value
     };
@@ -17,7 +17,7 @@ export function renderRow(item, onDelete) {
     const row = document.createElement("tr");
     row.dataset.id = item.id;
 
-    [item.name, item.category, item.quantity, item.price].forEach(value => {
+    [item.name, item.quantity, item.price ,item.category].forEach(value => {
         const cell = document.createElement("td");
         cell.textContent = value;
         row.appendChild(cell);

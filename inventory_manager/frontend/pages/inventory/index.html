@@ -15,6 +15,7 @@
         <header>
             <nav>
                 <ul class="nav-ul">
+                    <li><a href="/inventory_manager/frontend/index.html">Home</a></li>
                     <li><a href="">Inventory</a></li>
                     <li><a href="">Quote</a></li>
                 </ul>
@@ -26,10 +27,10 @@
                     <div class="items_operations">
                         <ul class="operations_list">
                             <button id="add_btn" class="toolbar_btn" aria-label="Add item" title="Add item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus preview-icon"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus preview-icon"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
                             </button>
                             <button id="src_btn" class="toolbar_btn" aria-label="Search item" title="Search item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search preview-icon"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search preview-icon"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
                             </button>
                         </ul>
                     </div>
@@ -37,21 +38,27 @@
                 <div class="inventory_items">
                     <dialog id="item_dialog" class="item_dialog">
                     <form id="item-form">
-                        <h2>Nuovo articolo</h2>
-                        <label>Nome <input name="name" id="item_name" required></label>
-                        <label>Categoria <input name="category" id="item_category"></label>
-                        <label>Quantità <input name="quantity" type="number" min="0" value="0" id="item_quantity" required></label>
-                        <label>Prezzo <input name="price" type="number" min="0" step="0.01" id="item_price" required></label>
+                        <h2>New item</h2>
+                        <label>Name <input name="name" id="item_name" required></label>
+                        <label>Quantity <input name="quantity" type="number" min="0" value="0" id="item_quantity" required></label>
+                        <label>Price <input name="price" type="number" min="0" step="0.01" id="item_price" required></label>
+                        <label>Category 
+                            <select name="Category" id="item_category">
+                                <option value="">Semiconductors</option>
+                                <option value="">Ram</option>
+                                <option value="">Graphics cards</option>
+                            </select>
+                        </label>
                         <div class="dialog-actions">
-                        <button type="button" id="btn_cancel" class="dialog_btn">Annulla</button>
-                        <button type="submit" class="dialog_btn">Salva</button>
+                            <button type="button" id="btn_cancel" class="dialog_btn">Annulla</button>
+                            <button type="submit" class="dialog_btn">Salva</button>
                         </div>
                     </form>
                     </dialog>
                     <table id="inventory" class="inventory">
                         <thead>
                             <tr>
-                                <th>Item</th>
+                                <th>Name</th>
                                 <th>Quantity</th>
                                 <th>Price</th>
                                 <th>Category</th>

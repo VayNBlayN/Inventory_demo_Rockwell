@@ -2,14 +2,26 @@
 
 
 /*Style for the card cange buttons*/
-.nav-ul{
-    list-style: none;
+.nav-ul {
     display: flex;
+    list-style: none;
+    background: rgba(50, 50, 50, 0.433);
+    margin: 0%;
+    padding: .81%;
 }
+
 .nav-ul li a {
-    color: var(--text-color);
+    color: #ffff;
     text-decoration: none;
-    margin: 5%;
+    padding: .5rem;
+    border-bottom: 1px solid transparent;
+    transition: .2s ease-in;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nav-ul li a:hover {
+    border-bottom: 1.2px solid rgb(241, 238, 238);
 }
 
 
@@ -20,7 +32,7 @@
 
 .toolbar {
 
-    border: 1px solid black;
+    border: 1px solid #ffff;
     border-radius: 5px;
 }
 .toolbar_btn {
@@ -36,7 +48,7 @@
 
 .inventory_items {
     padding: 1%;
-    border: 1px solid black;
+    border: 1px solid #ffff;
     border-radius: 5px;
 }
 .inventory {
@@ -46,10 +58,10 @@
 
 
 .inventory thead tr th {
-    margin: 50px;
+    color: white;
 }
 .inventory tbody tr:hover {
-    background-color: rgb(39, 40, 40);
+    background-color: rgba(31, 45, 45, 0.729);
     color: white;
 }
 
@@ -66,7 +78,7 @@
 }
 .dialog_btn:hover {
     background-color: transparent;
-    border: 2px solid var(--buttons);
+    border: 2px solid black;
 }
 
 .delete_btn {
