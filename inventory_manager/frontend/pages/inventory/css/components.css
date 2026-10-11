@@ -57,6 +57,9 @@
 
 
 
+.inventory tbody tr {
+    color: white;
+}
 .inventory thead tr th {
     color: white;
 }
